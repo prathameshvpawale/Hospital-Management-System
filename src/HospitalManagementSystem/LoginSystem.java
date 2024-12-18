@@ -87,7 +87,7 @@ public class LoginSystem {
     private void launchMainApplication() {
         try {
             // Establish the database connection
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "root", "prathm!@#");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital", "-------", "-------");
 
             // Pass the connection to the main application
             SwingUtilities.invokeLater(() -> new HospitalManagementSystemSwing(connection));
